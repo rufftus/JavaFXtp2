@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="263.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lmdsio.projetbiblio.controllers.LoginController">
+   <children>
+      <VBox layoutX="72.0" layoutY="74.0" minHeight="96.0" minWidth="103.0" prefHeight="115.0" prefWidth="231.0">
+         <children>
+            <Label fx:id="loginText" alignment="CENTER_RIGHT" text="Veuillez saisir vos identifiant" textAlignment="CENTER">
+               <padding>
+                  <Insets right="80.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Login" />
+                  <TextField fx:id="loginField" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="mot de passe" />
+                  <PasswordField fx:id="passwordField" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginClick" text="connection" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

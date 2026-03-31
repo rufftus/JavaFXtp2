@@ -3,12 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lmdsio.projetbiblio.MasterController">
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lmdsio.projetbiblio.controllers.MasterController">
    <MenuBar>
      <menus>
        <Menu mnemonicParsing="false" text="Utilisateurs">
          <items>
-           <MenuItem fx:id="menuConnexion" mnemonicParsing="false" text="Connexion" />
+           <MenuItem fx:id="menuConnexion" mnemonicParsing="false" onAction="#onMenuConnexion" text="Connexion" />
              <MenuItem fx:id="menuDeconnexion" mnemonicParsing="false" text="Déconnexion" />
          </items>
        </Menu>
@@ -18,6 +18,11 @@
              <MenuItem fx:id="menuAjout" mnemonicParsing="false" text="Ajout" />
          </items>
        </Menu>
+         <Menu mnemonicParsing="false" text="?">
+           <items>
+             <MenuItem fx:id="menuApropos" mnemonicParsing="false" onAction="#onMenuabout" text="A propos" />
+           </items>
+         </Menu>
 
      </menus>
    </MenuBar>

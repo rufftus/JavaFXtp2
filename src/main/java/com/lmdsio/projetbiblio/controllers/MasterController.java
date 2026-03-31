@@ -1,4 +1,4 @@
-package com.lmdsio.projetbiblio;
+package com.lmdsio.projetbiblio.controllers;
 
 import com.lmdsio.projetbiblio.BiblioApplication;
 import javafx.fxml.FXML;
@@ -11,6 +11,7 @@ public class MasterController {
     @FXML
     private ScrollPane contentPane;
 
+
     protected void showContent(String fxmlName){
         Node contentNode;
         try {
@@ -22,5 +23,21 @@ public class MasterController {
         }
         contentPane.setContent(contentNode);
     }
+
+    @FXML
+    protected void initialize() {
+        showContent("welcome");
+    }
+
+    @FXML
+    protected void onMenuConnexion() {
+        showContent("login");
+    }
+
+    @FXML
+    protected void onMenuabout() {
+        showContent("about");
+    }
+
 
 }

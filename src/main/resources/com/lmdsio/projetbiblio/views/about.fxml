@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="350.0" minWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lmdsio.projetbiblio.controllers.AboutController">
+   <children>
+      <VBox layoutX="6.0" layoutY="3.0" prefHeight="333.0" prefWidth="387.0">
+         <children>
+            <Label text="Biblio 1.0">
+               <padding>
+                  <Insets left="200.0" right="50.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/book_deux.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="150.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="aproposButton" mnemonicParsing="false" onAction="#aproposClick" text="credits">
+               <VBox.margin>
+                  <Insets left="200.0" top="25.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="textAbout">
+               <VBox.margin>
+                  <Insets left="225.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
