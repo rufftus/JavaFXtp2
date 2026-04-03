@@ -12,7 +12,7 @@ public class MasterController {
     private ScrollPane contentPane;
 
 
-    protected void showContent(String fxmlName){
+    public void showContent(String fxmlName){
         Node contentNode;
         try {
             FXMLLoader fxmlLoader =
@@ -26,7 +26,7 @@ public class MasterController {
 
     @FXML
     protected void initialize() {
-        showContent("welcome");
+        ContentController.setMaster(this);
     }
 
     @FXML
