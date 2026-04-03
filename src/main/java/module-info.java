@@ -1,6 +1,8 @@
 module com.lmdsio.projetbiblio {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires bcrypt;
 
 
     opens com.lmdsio.projetbiblio to javafx.fxml;
