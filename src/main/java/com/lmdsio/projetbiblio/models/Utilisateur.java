@@ -47,7 +47,7 @@ public class Utilisateur {
 
 
     public Utilisateur(String login){
-
+        this.login = login;
     }
 
 

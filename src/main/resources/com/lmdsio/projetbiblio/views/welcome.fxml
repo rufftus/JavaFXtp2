@@ -11,5 +11,9 @@
             <Insets left="45.0" top="80.0" />
          </padding>
       </Label>
+      <Label fx:id="textBienvenue">
+         <padding>
+            <Insets left="300.0" top="25.0" />
+         </padding></Label>
    </children>
 </VBox>

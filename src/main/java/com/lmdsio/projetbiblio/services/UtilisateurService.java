@@ -24,6 +24,7 @@ public class UtilisateurService extends DbService{
                     user.setNom(rs.getString("nom"));
                     user.setPrenom(rs.getString("prenom"));
                     user.setCompte(rs.getString("compte").charAt(0));
+                    ok=true;
                 }
             }
             dbClose();
